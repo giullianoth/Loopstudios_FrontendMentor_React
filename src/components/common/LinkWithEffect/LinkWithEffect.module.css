@@ -1,0 +1,21 @@
+.linkEffect {
+    position: relative;
+    padding-block: 10px;
+    display: inline-block;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
+        width: 50%;
+        height: 3px;
+        background-color: currentColor;
+        transition: var(--transition-properties);
+    }
+
+    &:hover::before {
+        transform: translateX(-50%) scaleX(1);
+    }
+}

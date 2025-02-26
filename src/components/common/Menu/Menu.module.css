@@ -1,0 +1,11 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: var(--transition-properties);
+
+    @media screen and (min-width: 900px) {
+        flex-direction: row;
+    }
+}
