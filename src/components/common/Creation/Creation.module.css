@@ -1,0 +1,40 @@
+.creation {
+    position: relative;
+    background-color: var(--color-black);
+    transition: var(--transition-properties);
+
+    &:hover {
+        background-color: var(--color-white);
+
+        .creation__image {
+            opacity: 0.3;
+        }
+
+        .creation__title a {
+            color: var(--color-black);
+        }
+    }
+}
+
+.creation__image {
+    opacity: 0.6;
+}
+
+.creation__title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    a {
+        color: var(--color-white);
+        display: block;
+
+        @media screen and (min-width: 900px) {
+            font-size: 1.4em;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}

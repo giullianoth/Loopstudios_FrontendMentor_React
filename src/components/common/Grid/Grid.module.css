@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: var(--breakpoint-mobile-landscape);
+    margin-inline: auto;
+
+    @media screen and (min-width: 900px) {
+        max-width: none;
+    }
+}

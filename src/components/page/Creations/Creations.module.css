@@ -1,0 +1,32 @@
+.creations {
+    width: 100%;
+    padding-bottom: 60px;
+    position: relative;
+
+    @media screen and (min-width: 900px) {
+        padding-bottom: 0;
+    }
+}
+
+.creations__heading {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 900px) {
+        justify-content: space-between;
+    }
+}
+
+.creations__cta {
+    position: absolute;
+    top: calc(100% - 80px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (min-width: 900px) {
+        position: static;
+        transform: none;
+    }
+}
