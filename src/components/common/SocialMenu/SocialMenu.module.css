@@ -1,0 +1,10 @@
+.socialMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    @media screen and (min-width: 900px) {
+        justify-content: flex-end;
+    }
+}
