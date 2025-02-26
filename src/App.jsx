@@ -4,6 +4,7 @@ import Footer from "./components/page/Footer"
 import Header from "./components/page/Header"
 import Headline from "./components/page/Headline"
 import Presentation from "./components/page/Presentation"
+import ScrollUp from "./components/common/ScrollUp"
 
 function App() {
   const [scrolling, setScrolling] = useState(window.scrollY > 0)
@@ -18,6 +19,7 @@ function App() {
         <Creations />
       </main>
       <Footer />
+      <ScrollUp scrolling={scrolling} />
     </>
   )
 }
